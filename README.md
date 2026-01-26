@@ -2,7 +2,7 @@
 
 ## Demos
 
-Live Page: 
+Live Page: https://quzai24.github.io/Personal-Website/
 
 Video Demo:
 
