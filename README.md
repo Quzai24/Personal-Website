@@ -4,7 +4,7 @@
 
 Live Page: https://quzai24.github.io/Personal-Website/
 
-Video Demo:
+Video Demo: https://youtu.be/h5bexGi9hSo
 
 ## Project Description
 
