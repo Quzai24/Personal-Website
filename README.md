@@ -19,20 +19,6 @@ This was also created for my <a href="https://johnguerra.co/classes/webDevelopme
 - Small movable mini-pages for sections like Education, Skill, etc.
 - CSS Animations for waves
 
-## User Personas & Stories
-
-- Persona: Classmate — "Maya"
-  - Goal: Looking for friends in the class.
-  - Story: Maya looks at the people in the class GitHub, and looks at pages to find potential friends.
-
-- Persona: Hiring Manager — "Jordan"
-  - Goal: Quickly review an applicant's skills and relevant projects.
-  - Story: Jordan navigates to the Projects and About sections, opens an Education minipage to view credentials, and emails the candidate after reviewing the portfolio.
-
-- Persona: Fellow Developer — "Liam"
-  - Goal: Inspect implementation details and reuse components.
-  - Story: Liam clones the repository, runs a local server, inspects `js/art.js` for the drawing popup implementation, and adapts the minipage pattern for his own site.
-
 ## Build & Run (from Git)
 
 1. Clone the repo:
@@ -51,7 +37,7 @@ cd <this project path>/Personal-Website
 http-server
 ```
 
-Then open http://localhost:8000 in your browser. You can open `index.html` directly (file://) but some features (like loading modules or images with CORS) work best over HTTP.
+Then open http://127.0.0.1:8080 in your browser.
 
 ## Project Structure
 
