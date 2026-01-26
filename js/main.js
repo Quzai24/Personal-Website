@@ -50,7 +50,7 @@ function MainModule() {
 
   contactMe.addEventListener("click", () => {
     const type = "Contact Me";
-        const content = `
+    const content = `
       <h4>Avijit Singh</h4>
       <p>Email: <a href="mailto:avijitsingh704@gmail.com">avijitsingh704@gmail.com</a></p>
       <p>(570)-362-8147</p>
