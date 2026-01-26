@@ -3,9 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Avijit Singh</title>
   </head>
-  <body></body>
+  <body id="sidebar-wrapper" class="mainpage">
+    <div id="mainpage" class="row">
+      <div class="row col-4">
+        <header id="sidebar" class="col-9">
+          <nav>
+            <h1>Avijit Singh</h1>
+            <div id="Education"><h2>Education</h2></div>
+            <div id="Skills"><h2>Skills</h2></div>
+            <div id="Art"><h2>Art</h2></div>
+            <div id="Projects"><h2>Projects</h2></div>
+            <div id="About Me"><h2>About Me</h2></div>
+            <div id="Contact Me"><h2>Contact Me</h2></div>
+          </nav>
+        </header>
+        <div id="waves-animation" class="col-3">
+          <div class="wave one"></div>
+          <div class="wave two"></div>
+          <div class="wave three"></div>
+          <div class="wave four"></div>
+        </div>
+      </div>
+      <div id="me" class="col-8">
+        <div class="img-spacer">
+          <img
+            class="me-image"
+            src="./source_images/me.PNG"
+            alt="My Artist Avatar (Avijit Singh)"
+          />
+        </div>
+        <div class="welcome">
+          <h2>Hello! I'm Avijit Singh</h2>
+          <p>
+            I am an Undergrad CS + Media Arts Student at Northeastern University
+          </p>
+          <p>Welcome to my personal portfolio! I am an artist and developer.</p>
+          <p>
+            I love combining art and technology to create unique experiences
+          </p>
+          <p>Feel free to explore my work and get in touch!</p>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          © 2026 Avijit Singh ·
+          <a class="foot-link" href="LICENSE">MIT License</a>
+        </p>
+        <p>SVGs from Public Domain</p>
+      </div>
+    </div>
 
-  <script src="./js/main.js"></script>
+    <!-- Template for mini pages -->
+
+    <!-- <div id="minipage" class="minipage">
+      <div id="miniheader" class="miniheader">
+        <span class="minititle">Stuff</span>
+        <button class="close">
+          <img class="close-image" src="./source_images/close.svg" />
+        </button>
+      </div>
+      <div class="minipage-content"></div>
+    </div> -->
+  </body>
+
+  <script type="module" src="./js/main.js"></script>
 </html>
