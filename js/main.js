@@ -6,41 +6,6 @@ function MainModule() {
   const aboutMe = document.getElementById("About Me");
   const contactMe = document.getElementById("Contact Me");
 
-  // education.addEventListener("click", () => {
-  //   if (document.getElementById("minipageEducation")) {
-  //     return;
-  //   }
-  //   const type = "Education";
-  //   const content = `
-  //     <h3>Education</h3>
-  //     <p>B.Sc. in Computer Science — Example University</p>
-  //     <p>Graduated: 2024</p>
-  //   `;
-
-  //   // Create and insert the minipage HTML
-  //   document.body.insertAdjacentHTML("beforeend", openMiniPage(type, content));
-
-  //   // Position the minipage roughly centered
-  //   const minipage = document.getElementById(`minipage${type}`);
-  //   if (minipage) {
-  //     minipage.style.position = "absolute";
-  //     const left = window.pageXOffset + Math.max(20, (window.innerWidth / 2) - 200);
-  //     const top = window.pageYOffset + 100;
-  //     minipage.style.left = left + "px";
-  //     minipage.style.top = top + "px";
-
-  //     // Wire the close button
-  //     const closeBtn = minipage.querySelector(`.close${type}`);
-  //     if (closeBtn) {
-  //       closeBtn.addEventListener("click", () => {
-  //         minipage.remove();
-  //       });
-  //     }
-
-  //     // Allow dragging via MiniPageListener
-  //     MiniPageListener(type);
-  //   }
-  // });
   education.addEventListener("click", () => {
     const type = "Education";
     const content = `
@@ -70,10 +35,11 @@ function MainModule() {
     `;
     setupMiniPage(type, content);
   });
+
   aboutMe.addEventListener("click", () => {
     const type = "About Me";
     const content = `
-      <p>Student at <b>Northeastern University</b> working towards a <b>CS and Media Arts Combined Degree</b> as 
+      <p style="font-size: 15px;">Student at <b>Northeastern University</b> working towards a <b>CS and Media Arts Combined Degree</b> as 
       well as a <em>Game Design + Math Minor</em>. I am interested in <b>Web Dev, Mobile App Dev, and Game Dev.</b> 
       I find rendering engines, projections, game design, and application design very interesting, 
       although I am generally interested in any field that I am able to learn more ideas, and use 
@@ -81,6 +47,7 @@ function MainModule() {
     `;
     setupMiniPage(type, content);
   });
+
   contactMe.addEventListener("click", () => {
     const type = "Contact Me";
         const content = `
@@ -110,7 +77,7 @@ function MainModule() {
   function openMiniPage(type, content) {
     return `<div id="minipage${type}" class="minipage">
       <div id="miniheader${type}" class="miniheader">
-        <span class="minititle">${type}</span>
+        <span class="minititle"><h4>${type}</h4></span>
         <button id="close${type}" class="close">
           <img class="close-image" src="./source_images/close.svg" />
         </button>

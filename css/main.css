@@ -1,6 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 0px;
+  font-weight:600;
+}
+
+ul {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 p {
   margin-bottom: 0px;
   font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .mainpage {
@@ -41,6 +56,11 @@ p {
   font-size: 30px;
   margin-bottom: 30px;
   cursor: pointer;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
 }
 
 /* Waves Animation */
