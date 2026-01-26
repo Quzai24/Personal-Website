@@ -1,0 +1,241 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 0px;
+  font-weight: 600;
+}
+
+ul {
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  margin-bottom: 0px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+    overflow: hidden;
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  background-color: #dfdbe9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.header {
+  border-bottom: #2c1143 3px solid;
+  margin-left: 0px;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+}
+
+.title {
+  display: inline-block;
+}
+
+.title h1 {
+  font-size: 7vh;
+  margin-bottom: 0px;
+}
+
+.page-content {
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.home {
+  direction: rtl;
+  padding-left: 0px;
+}
+
+.home-image {
+  height: 7vh;
+  width: 7vh;
+  margin: 1vh, 0vh, 1vh, 1vh;
+  padding: 0.25vh;
+  border: #2c1143 3px solid;
+}
+
+.art-col {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.art {
+  height: auto;
+  width: 30vw;
+  margin: 10px 0px;
+  border: #2c1143 3px solid;
+}
+
+.page-footer {
+  width: 100%;
+  height: 20vh;
+}
+
+.footer {
+  text-align: center;
+  stroke-width: 600;
+  background-color: #a89ebf;
+  height: 10vh;
+  padding-bottom: 10px;
+}
+
+.footer p {
+  z-index: 10;
+  position: relative;
+  top: 0px;
+}
+
+spacer {
+  height: 10vh;
+  background-color: #a89ebf;
+}
+
+/* Waves Animation */
+#waves-animation {
+  height: 20vh;
+}
+
+#waves-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.wave {
+  height: 20vh;
+  width: 100vw;
+  background: url("../source_images/Waves_Bottom.PNG");
+  background-repeat: repeat-x;
+  background-size: 1024px auto;
+  overflow: hidden;
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+
+.one {
+  animation: wave 11s cubic-bezier(0.3, 0.4, 0.65, 0.5) infinite;
+}
+
+.two {
+  animation: wave 13s cubic-bezier(0.3, 0.4, 0.65, 0.5) 1s reverse infinite;
+}
+
+.three {
+  animation: wave 15s cubic-bezier(0.3, 0.4, 0.65, 0.5) 2s infinite;
+}
+
+.four {
+  animation: wave 17s cubic-bezier(0.3, 0.4, 0.65, 0.5) 3s reverse infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0px;
+    background-position-y: 0px;
+  }
+  10% {
+    background-position-y: 2px;
+  }
+  40% {
+    background-position-y: 18px;
+  }
+  50% {
+    background-position-y: 20px;
+  }
+  60% {
+    background-position-y: 18px;
+  }
+  90% {
+    background-position-y: 2px;
+  }
+  100% {
+    background-position-x: -512px;
+    background-position-y: 0px;
+  }
+}
+
+/* Drawable popup styles */
+.clickable-pic {
+  cursor: pointer;
+}
+
+.draw-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+
+.draw-popup {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  background: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.draw-header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.draw-btn {
+  padding: 6px 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  border-radius: 4px;
+}
+
+.draw-canvas-wrap {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  max-width: calc(90vw - 20px);
+  max-height: calc(80vh - 40px);
+}
+
+.draw-panel {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.draw-base-canvas,
+.draw-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
