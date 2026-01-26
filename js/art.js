@@ -18,18 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
     btnUndo.textContent = "Undo";
     const btnClear = document.createElement("button");
     btnClear.textContent = "Clear";
-    const btnSave = document.createElement("button");
-    btnSave.textContent = "Save";
 
-    [btnSave, btnUndo, btnClear, btnClose].forEach((b) => {
+    [btnUndo, btnClear, btnClose].forEach((b) => {
       b.className = "draw-btn";
     });
-    btnSave.classList.add("draw-save");
     btnUndo.classList.add("draw-undo");
     btnClear.classList.add("draw-clear");
     btnClose.classList.add("draw-close");
 
-    header.appendChild(btnSave);
     header.appendChild(btnUndo);
     header.appendChild(btnClear);
     header.appendChild(btnClose);
@@ -195,30 +191,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // start with undo disabled until there's something to undo
       btnUndo.disabled = true;
-
-      btnSave.addEventListener("click", () => {
-        // Export side-by-side: original on left, user drawing on right
-        const out = document.createElement("canvas");
-        out.width = baseCanvas.width * 2;
-        out.height = baseCanvas.height;
-        const outCtx = out.getContext("2d");
-        outCtx.drawImage(baseCanvas, 0, 0);
-        outCtx.drawImage(drawCanvas, baseCanvas.width, 0);
-        const data = out.toDataURL("image/png");
-        const w = window.open("about:blank", "_blank");
-        if (w) {
-          const imgEl = w.document.createElement("img");
-          imgEl.src = data;
-          w.document.body.style.margin = "0";
-          w.document.body.appendChild(imgEl);
-        } else {
-          // fallback: download
-          const a = document.createElement("a");
-          a.href = data;
-          a.download = "drawing.png";
-          a.click();
-        }
-      });
 
       btnClose.addEventListener("click", () => {
         overlay.remove();
