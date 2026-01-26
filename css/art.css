@@ -24,7 +24,7 @@ a {
 }
 
 body {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .page {
@@ -128,7 +128,6 @@ spacer {
   position: absolute;
   left: 0;
   top: 0;
-
 }
 
 .one {
