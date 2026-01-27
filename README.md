@@ -11,6 +11,8 @@ Video Demo: https://youtu.be/h5bexGi9hSo
 This is a lightweight personal portfolio website showcasing Avijit Singh's projects, art, and contact information. The main page has a sidebar from which you can click on to make minipages that you can drag and interact with. In the Art Page you can open some of my artwork and in a drawing workspace try to recreate images side-by-side. 
 This was also created for my <a href="https://johnguerra.co/classes/webDevelopment_online_spring_2026/">Web Development Class (CS 5610)</a> at Northeastern.
 
+SVGs Provided by sgvrepo.com under Public Domain License or MIT License
+
 ## Key Features
 
 - Gallery of artworks and animations
@@ -70,6 +72,3 @@ The Projects page
 <img width="1920" height="1080" alt="Art Page Wireframe" src="https://github.com/user-attachments/assets/84e38f83-a15d-4dee-ae2f-2719ac9f375c" />
 <img width="1920" height="1080" alt="Main Page Wireframe" src="https://github.com/user-attachments/assets/faebe9a7-2e3b-4c75-973b-7a009a1044f9" />
 <img width="1920" height="1080" alt="Project Page Wireframe" src="https://github.com/user-attachments/assets/fdbe53d0-8497-40ba-a0c0-4454e37be229" />
-
-
-
