@@ -69,6 +69,13 @@ The Draw along popup that was made with the help of GPT-5 mini
 The Projects page
 
 ## WireFrames
-<img width="1920" height="1080" alt="Art Page Wireframe" src="https://github.com/user-attachments/assets/84e38f83-a15d-4dee-ae2f-2719ac9f375c" />
 <img width="1920" height="1080" alt="Main Page Wireframe" src="https://github.com/user-attachments/assets/faebe9a7-2e3b-4c75-973b-7a009a1044f9" />
+<img width="1920" height="1080" alt="Art Page Wireframe" src="https://github.com/user-attachments/assets/84e38f83-a15d-4dee-ae2f-2719ac9f375c" />
 <img width="1920" height="1080" alt="Project Page Wireframe" src="https://github.com/user-attachments/assets/fdbe53d0-8497-40ba-a0c0-4454e37be229" />
+
+## AI Usage
+
+I made all the creative and technical decisions for this project; however I did use the built in AI in VS Code for help when I was stuck on a bug for a while only after looking up solutions myself. I used it in 3 major areas:
+1) The Draw Along Feature had me struggling so there is Javascript code that was created/debugged with the help of AI
+2) Positioning the Footer Animation on the Art Page.
+3) Help in creating this README Document. It got like 70% there but I had to fix up its errors a bit.
