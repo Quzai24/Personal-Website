@@ -56,4 +56,3 @@ Then open http://localhost:8000 in your browser. You can open `index.html` direc
   - `art.js` — Drawing popup, canvas logic, undo/save
 - `source_images/` — Images, icons, and media
 - `package.json`, `eslint.config.mjs`, etc. — tooling and metadata (if present)
-
