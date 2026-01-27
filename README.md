@@ -1,5 +1,7 @@
 # Personal Portfolio — Avijit Singh
 
+<img width="400" height="389" alt="Avatar of Myself" src="https://github.com/user-attachments/assets/ec3632b5-c1e3-44b4-909f-fc46563504e7"/> 
+
 ## Demos
 
 Live Page: https://quzai24.github.io/Personal-Website/
