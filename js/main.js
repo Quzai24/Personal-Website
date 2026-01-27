@@ -3,8 +3,8 @@ function MainModule() {
 
   const education = document.getElementById("Education");
   const skills = document.getElementById("Skills");
-  const aboutMe = document.getElementById("About Me");
-  const contactMe = document.getElementById("Contact Me");
+  const aboutMe = document.getElementById("About_Me");
+  const contactMe = document.getElementById("Contact_Me");
 
   education.addEventListener("click", () => {
     const type = "Education";
