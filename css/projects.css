@@ -1,10 +1,15 @@
+@font-face {
+  font-family: myFont; 
+  src: url(/font/starborn.otf); 
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: myFont;
   margin-top: 0px;
   font-weight: 600;
 }
@@ -53,7 +58,6 @@ body {
 }
 
 .page-content {
-  padding: 10px;
   overflow-y: scroll;
 }
 
@@ -86,4 +90,71 @@ body {
   width: 33vh;
   border: #2c1143 3px solid;
   border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Waves Animation */
+.right {
+    transform: rotate(180deg);
+    transform: scaleX(-1);
+    right: 0;
+}
+
+
+#waves-animation {
+  height: 100%;
+  padding: 0;
+}
+
+.wave {
+  height: 100vh;
+  width: 200px;
+  position: absolute;
+  background: url("../source_images/wave.PNG");
+  background-repeat: repeat-y;
+  background-size: auto 1024px;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.one {
+  animation: wave 11s cubic-bezier(0.3, 0.4, 0.65, 0.5) infinite;
+}
+
+.two {
+  animation: wave 13s cubic-bezier(0.3, 0.4, 0.65, 0.5) 1s reverse infinite;
+}
+
+.three {
+  animation: wave 15s cubic-bezier(0.3, 0.4, 0.65, 0.5) 2s infinite;
+}
+
+.four {
+  animation: wave 17s cubic-bezier(0.3, 0.4, 0.65, 0.5) 3s reverse infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position-y: 0px;
+    background-position-x: 0px;
+  }
+  10% {
+    background-position-x: -2px;
+  }
+  40% {
+    background-position-x: -18px;
+  }
+  50% {
+    background-position-x: -20px;
+  }
+  60% {
+    background-position-x: -18px;
+  }
+  90% {
+    background-position-x: -2px;
+  }
+  100% {
+    background-position-y: -512px;
+    background-position-x: 0px;
+  }
 }

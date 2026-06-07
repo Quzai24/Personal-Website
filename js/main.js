@@ -3,8 +3,8 @@ function MainModule() {
 
   const education = document.getElementById("Education");
   const skills = document.getElementById("Skills");
-  const aboutMe = document.getElementById("About Me");
-  const contactMe = document.getElementById("Contact Me");
+  const aboutMe = document.getElementById("About_Me");
+  const contactMe = document.getElementById("Contact_Me");
 
   education.addEventListener("click", () => {
     const type = "Education";
@@ -28,9 +28,10 @@ function MainModule() {
     const type = "Skills";
     const content = `
       <ul>
-        <li><b>Languages:</b> Java, Kotlin, XML, C#, Python, TypeScript, CSS, HTML, and SQL</li>
-        <li><b>Frameworks:</b> Streamlit, Flask, React, Node.js, and Bootstrap</li>
-        <li><b>Programs:</b> VSCode, Unity, IntelliJ IDEA, Android Studio, Git, Adobe Animate, Premiere Pro, and Maya </li>
+        <li><b>Languages:</b> Java, Kotlin, HTML5, CSS, JavaScript, C#, Python, SQL</li>
+        <li><b>Frameworks:</b> Jetpack Compose, React, Express, Bootstrap5, Streamlit, Flask</li>
+        <li><b>Tech Stacks:</b> Git,IntelliJ IDEs, VSCode, Unity, FireBase, MongoDB </li>
+        <li><b>Art/Design Programs:</b> Maya, Adobe Animate, Premiere Pro, Procreate, Figma </li>
       </ul>
     `;
     setupMiniPage(type, content);
